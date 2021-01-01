@@ -1,0 +1,11 @@
+<h1>Create a new article</h1>
+
+<%= form_with scope: :article, url: articles_path, local:true do |f| %>
+    <p><%= f.label :title %></p><br/>
+    <p><%= f.text_field :title %></p>
+
+    <p><%= f.label :description %></p><br/>
+    <p><%= f.text_area :description %>
+
+    <p><%= f.submit %></p>
+<% end %>
